@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administratora - Zgłoszenia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <div class="admin-header-content">
+                <img src="assets/logo.png" alt="TODO Logo" class="logo-small">
+                <h1>Panel Administratora</h1>
+            </div>
+            <div class="admin-actions">
+                <button id="refreshBtn" class="btn btn-secondary">Odśwież</button>
+                <button id="logoutBtn" class="btn btn-primary">Wyloguj</button>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-label">Wszystkie zgłoszenia:</span>
+                    <span class="stat-value" id="totalSubmissions">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Ostatnia aktualizacja:</span>
+                    <span class="stat-value" id="lastUpdate">-</span>
+                </div>
+            </div>
+
+            <div id="loadingMessage" class="loading-message">
+                <div class="spinner"></div>
+                <p>Ładowanie zgłoszeń...</p>
+            </div>
+
+            <div id="errorMessage" class="error-message" style="display:none;"></div>
+
+            <div id="tableContainer" class="table-container" style="display:none;">
+                <div class="table-controls">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Szukaj po firmie, nazwisku lub emailu...">
+                    <select id="filterType" class="filter-select">
+                        <option value="">Wszystkie typy eventów</option>
+                        <option value="konferencja">Konferencja</option>
+                        <option value="konferencja_prasowa">Konferencja prasowa</option>
+                        <option value="szkolenie">Szkolenie</option>
+                        <option value="integracja">Event integracyjny</option>
+                        <option value="gala">Gala</option>
+                        <option value="targi">Targi</option>
+                        <option value="event_hybrydowy">Event hybrydowy</option>
+                        <option value="piknik">Piknik firmowy</option>
+                        <option value="jubileusz">Jubileusz firmowy</option>
+                        <option value="inne">Inne eventy korporacyjne</option>
+                    </select>
+                </div>
+
+                <div class="table-scroll">
+                    <table id="submissionsTable" class="submissions-table">
+                        <thead>
+                            <tr>
+                                <th>Data zgłoszenia</th>
+                                <th>Firma</th>
+                                <th>Kontakt</th>
+                                <th>Typ eventu</th>
+                                <th>Data eventu</th>
+                                <th>Uczestnicy</th>
+                                <th>Budżet</th>
+                                <th>Akcje</th>
+                            </tr>
+                        </thead>
+                        <tbody id="submissionsBody">
+                            <!-- Dane będą załadowane dynamicznie -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ze szczegółami zgłoszenia -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Szczegóły zgłoszenia</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Szczegóły będą załadowane dynamicznie -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary close-modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

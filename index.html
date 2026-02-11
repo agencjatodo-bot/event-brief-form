@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief Eventowy - TODO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- Logo firmy - aby podmienić logo, zastąp plik assets/logo.png swoim logo -->
+            <img src="assets/logo.png" alt="TODO Logo" class="logo" id="companyLogo">
+            <h1>Brief Eventowy</h1>
+            <p class="subtitle">Wypełnij formularz, abyśmy mogli przygotować dla Ciebie najlepszą ofertę</p>
+        </header>
+
+        <form id="eventBriefForm" class="brief-form">
+            <!-- Sekcja 1: Podstawowe informacje o evencie -->
+            <div class="form-section">
+                <h2>Informacje podstawowe</h2>
+                
+                <div class="form-group">
+                    <label for="eventType">Typ eventu *</label>
+                    <select id="eventType" name="eventType" required>
+                        <option value="">Wybierz typ eventu</option>
+                        <option value="konferencja">Konferencja</option>
+                        <option value="konferencja_prasowa">Konferencja prasowa</option>
+                        <option value="szkolenie">Szkolenie</option>
+                        <option value="integracja">Event integracyjny</option>
+                        <option value="gala">Gala</option>
+                        <option value="targi">Targi</option>
+                        <option value="event_hybrydowy">Event hybrydowy</option>
+                        <option value="piknik">Piknik firmowy</option>
+                        <option value="jubileusz">Jubileusz firmowy</option>
+                        <option value="inne">Inne eventy korporacyjne</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventDate">Planowana data lub przedział czasowy *</label>
+                    <input type="text" id="eventDate" name="eventDate" placeholder="np. 15.06.2025 lub czerwiec 2025" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="participants">Liczba uczestników *</label>
+                    <input type="text" id="participants" name="participants" placeholder="np. 50-100 osób" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Lokalizacja *</label>
+                    <select id="location" name="location" required>
+                        <option value="">Wybierz opcję</option>
+                        <option value="mam_miejsce">Mam już wybrane miejsce</option>
+                        <option value="prosze_o_propozycje">Proszę o propozycje</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="locationDetailsGroup" style="display:none;">
+                    <label for="locationDetails">Szczegóły lokalizacji</label>
+                    <input type="text" id="locationDetails" name="locationDetails" placeholder="Podaj nazwę miejsca lub preferowany region/miasto">
+                </div>
+            </div>
+
+            <!-- Sekcja 2: Budżet i cel -->
+            <div class="form-section">
+                <h2>Budżet i cele</h2>
+                
+                <div class="form-group">
+                    <label for="budget">Budżet *</label>
+                    <input type="text" id="budget" name="budget" placeholder="np. 50 000 - 100 000 zł lub do ustalenia" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="businessGoal">Główny cel eventu *</label>
+                    <select id="businessGoal" name="businessGoal" required>
+                        <option value="">Wybierz cel</option>
+                        <option value="networking">Networking</option>
+                        <option value="szkolenie">Szkolenie</option>
+                        <option value="integracja">Integracja zespołu</option>
+                        <option value="promocja">Promocja produktu/usługi</option>
+                        <option value="wizerunek">Budowanie wizerunku</option>
+                        <option value="inne">Inny cel</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Sekcja 3: Wymagania -->
+            <div class="form-section">
+                <h2>Wymagania</h2>
+                
+                <div class="form-group">
+                    <label>Wymagania techniczne (zaznacz wszystkie, które dotyczą)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tech_multimedia" value="multimedia">
+                            <span>Oprawa multimedialna</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tech_sound" value="sound">
+                            <span>Nagłośnienie</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tech_lighting" value="lighting">
+                            <span>Oświetlenie</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tech_presentation" value="presentation">
+                            <span>Sprzęt do prezentacji</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tech_other" value="other">
+                            <span>Inne wymagania techniczne</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="catering">Catering *</label>
+                    <select id="catering" name="catering" required>
+                        <option value="">Wybierz opcję</option>
+                        <option value="nie_potrzebny">Nie potrzebny</option>
+                        <option value="kawa_herbata">Kawa/herbata/przekąski</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="kolacja">Kolacja</option>
+                        <option value="full_day">Catering całodzienny</option>
+                        <option value="bankiet">Bankiet</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="cateringDetailsGroup" style="display:none;">
+                    <label for="cateringDetails">Dodatkowe informacje o cateringu</label>
+                    <textarea id="cateringDetails" name="cateringDetails" rows="2" placeholder="np. preferencje dietetyczne, liczba posiłków"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Dodatkowe wymagania (zaznacz jeśli dotyczy)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="extra_translation" value="translation">
+                            <span>Tłumaczenia</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="extra_accommodation" value="accommodation">
+                            <span>Nocleg dla gości</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="extra_transport" value="transport">
+                            <span>Transport</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="extra_branding" value="branding">
+                            <span>Branding/materiały promocyjne</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sekcja 4: Dodatkowe informacje -->
+            <div class="form-section">
+                <h2>Dodatkowe informacje</h2>
+                
+                <div class="form-group">
+                    <label for="additionalComments">Dodatkowe uwagi lub oczekiwania</label>
+                    <textarea id="additionalComments" name="additionalComments" rows="4" placeholder="Opisz szczegóły, które pomogą nam lepiej przygotować ofertę"></textarea>
+                </div>
+            </div>
+
+            <!-- Sekcja 5: Dane kontaktowe -->
+            <div class="form-section">
+                <h2>Dane kontaktowe</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">Imię *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Nazwisko *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Firma *</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zgoda RODO -->
+            <div class="form-section">
+                <div class="form-group">
+                    <label class="checkbox-label gdpr-consent">
+                        <input type="checkbox" id="gdprConsent" name="gdprConsent" required>
+                        <span>Wyrażam zgodę na przetwarzanie moich danych osobowych przez TODO w celu przygotowania oferty i obsługi eventu. Dane będą przetwarzane wyłącznie w kontekście realizacji eventu, zgodnie z <a href="assets/polityka_prywatnosci.pdf" target="_blank" class="privacy-link">polityką prywatności</a>. *</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Przyciski -->
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Wyślij brief</button>
+                <button type="reset" class="btn btn-secondary">Wyczyść formularz</button>
+            </div>
+
+            <!-- Komunikat o statusie -->
+            <div id="formMessage" class="form-message" style="display:none;"></div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 TODO. Wszystkie prawa zastrzeżone.</p>
+        <p><a href="admin-login.html" class="admin-link">Panel administratora</a></p>
+    </footer>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

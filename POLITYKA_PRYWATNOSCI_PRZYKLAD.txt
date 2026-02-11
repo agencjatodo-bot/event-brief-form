@@ -1,0 +1,114 @@
+POLITYKA PRYWATNOŚCI
+FORMULARZ BRIEFOWY EVENTOWY - TODO
+
+Niniejsza polityka prywatności określa zasady przetwarzania danych osobowych zbieranych za pomocą formularza briefowego dostępnego na stronie TODO.
+
+1. ADMINISTRATOR DANYCH
+
+Administratorem danych osobowych jest:
+TODO sp. z o.o.
+ul. [Adres]
+[Kod pocztowy] [Miasto]
+NIP: [NIP]
+Email: hello@todo.net.pl
+Strona: www.todo.net.pl
+
+2. CEL I PODSTAWA PRAWNA PRZETWARZANIA
+
+Dane osobowe zbierane za pomocą formularza są przetwarzane wyłącznie w celu:
+- przygotowania oferty usług eventowych
+- kontaktu z Państwem w sprawie organizacji eventu
+- realizacji eventu (po podpisaniu umowy)
+
+Podstawa prawna przetwarzania: zgoda osoby, której dane dotyczą (art. 6 ust. 1 lit. a RODO).
+
+3. ZAKRES ZBIERANYCH DANYCH
+
+Zbieramy następujące dane osobowe:
+- Imię i nazwisko
+- Nazwa firmy
+- Adres email
+- Numer telefonu
+- Informacje o planowanym evencie (typ, data, liczba uczestników, budżet, wymagania)
+
+4. ODBIORCY DANYCH
+
+Dane osobowe mogą być przekazywane:
+- podwykonawcom realizującym usługi eventowe (hotele, firmy cateringowe, dostawcy sprzętu)
+- dostawcom usług IT wspierających naszą działalność
+- tylko w zakresie niezbędnym do realizacji eventu
+
+5. OKRES PRZECHOWYWANIA DANYCH
+
+Dane osobowe będą przechowywane:
+- do czasu wycofania zgody
+- przez okres niezbędny do przygotowania i realizacji eventu
+- przez okres wymagany przepisami prawa (np. przepisy podatkowe - 5 lat)
+
+Po tym okresie dane zostaną trwale usunięte.
+
+6. PRAWA OSÓB, KTÓRYCH DANE DOTYCZĄ
+
+Przysługuje Państwu prawo do:
+- dostępu do swoich danych osobowych
+- sprostowania danych
+- usunięcia danych
+- ograniczenia przetwarzania
+- przenoszenia danych
+- wniesienia sprzeciwu wobec przetwarzania
+- wycofania zgody w dowolnym momencie
+
+Wycofanie zgody nie wpływa na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem.
+
+7. PRAWO DO SKARGI
+
+Przysługuje Państwu prawo wniesienia skargi do organu nadzorczego:
+Urząd Ochrony Danych Osobowych
+ul. Stawki 2
+00-193 Warszawa
+
+8. DOBROWOLNOŚĆ PODANIA DANYCH
+
+Podanie danych osobowych jest dobrowolne, ale niezbędne do:
+- przygotowania oferty
+- kontaktu w sprawie eventu
+- realizacji usługi
+
+Niepodanie danych uniemożliwi przygotowanie oferty i realizację usługi.
+
+9. ZAUTOMATYZOWANE PODEJMOWANIE DECYZJI
+
+Dane nie będą wykorzystywane do zautomatyzowanego podejmowania decyzji, w tym profilowania.
+
+10. BEZPIECZEŃSTWO DANYCH
+
+Stosujemy odpowiednie środki techniczne i organizacyjne zapewniające bezpieczeństwo danych osobowych, w tym:
+- szyfrowanie połączeń (HTTPS)
+- ograniczenie dostępu do danych
+- regularne kopie zapasowe
+- monitoring bezpieczeństwa
+
+11. KONTAKT W SPRAWIE DANYCH OSOBOWYCH
+
+W sprawach dotyczących przetwarzania danych osobowych prosimy o kontakt:
+Email: hello@todo.net.pl
+Telefon: [Numer telefonu]
+
+12. ZMIANY W POLITYCE PRYWATNOŚCI
+
+Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. Zmiany będą publikowane na tej stronie wraz z datą ostatniej aktualizacji.
+
+---
+
+Data ostatniej aktualizacji: [Data]
+Wersja: 1.0
+
+---
+
+UWAGA DLA TODO:
+To jest przykładowa treść polityki prywatności. Przed wdrożeniem:
+1. Uzupełnij dane firmy (adres, NIP, telefon)
+2. Dostosuj treść do specyfiki działalności TODO
+3. Skonsultuj z prawnikiem/specjalistą RODO
+4. Przekonwertuj do PDF
+5. Umieść w folderze /assets/ jako polityka_prywatnosci.pdf
